@@ -9,7 +9,7 @@ const App = () => {
       {/* <ArrayStd /> */}
 
       {/*Estudo Eventos  */}
-      <EventsStd />
+      {/* <EventsStd /> */}
     </main>
   );
 };
