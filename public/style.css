@@ -101,7 +101,17 @@ button:active {
 
 button:disabled {
   opacity: 0.5;
-  cursor: wait;
+  /* cursor: wait; */
+  cursor: not-allowed;
+}
+
+button:disabled:active {
+  cursor: not-allowed;
+  box-shadow: 0 0 0 0px;
+}
+button:disabled:hover {
+  cursor: not-allowed;
+  box-shadow: 0 0 0 0px;
 }
 
 hr {
