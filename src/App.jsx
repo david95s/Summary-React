@@ -46,7 +46,7 @@ const App = () => {
       </div> */}
 
       <div style={{ maxWidth: "600px", margin: "80px auto" }}>
-        <UseEffectStd show={false} />
+        {/* <UseEffectStd show={false} /> */}
         <Exercicios />
       </div>
     </main>
