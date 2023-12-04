@@ -7,29 +7,24 @@ const myStyle = {
   width: "100%",
 };
 
-const dataStyle = {
-  background: "#383640",
-  padding: "8px",
-  marginTop: "15px",
-  borderRadius: "4px",
-};
-
 const Exercicios = () => {
   const [produtoPath, setProdutoPath] = React.useState(null);
 
   React.useEffect(() => {
-    if (produtoPath !== null) {
-      localStorage.setItem("favorite", produtoPath);
-    }
-  }, [produtoPath]);
-
-  React.useEffect(() => {
+    console.log("primeiro");
     const prefer = localStorage.getItem("favorite");
-
     if (prefer !== null) {
       setProdutoPath(prefer);
     }
   }, []);
+
+  React.useEffect(() => {
+    console.log("segundo");
+
+    if (produtoPath !== null) {
+      localStorage.setItem("favorite", produtoPath);
+    }
+  }, [produtoPath]);
 
   function handleClick({ target }) {
     setProdutoPath(target.innerText);

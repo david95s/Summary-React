@@ -7,6 +7,9 @@ import UseStatStd from "./components/Hooks/UseStateStd/UseStatStd";
 import ExercUseSta from "./components/Hooks/UseStateStd/ExercUseSta";
 import UseEffectStd from "./components/Hooks/UseEffectStd/UseEffectStd";
 import Exercicios from "./components/Hooks/UseEffectStd/Exercicios";
+import UseRefStd from "./components/Hooks/UseRefStd/UseRefStd";
+import UseMemoStd from "./components/Hooks/UseMemoStd/UseMemoStd";
+import UseCAllBackStd from "./components/Hooks/UseCAllBackStd/UseCAllBackStd";
 
 const App = () => {
   // Toda vz q um Hook foi ativado meu component Renderiza novamente
@@ -45,9 +48,20 @@ const App = () => {
         <ExercUseSta>Execicios Sobre React.useState()</ExercUseSta>
       </div> */}
 
-      <div style={{ maxWidth: "600px", margin: "80px auto" }}>
-        {/* <UseEffectStd show={false} /> */}
+      {/* <div style={{ maxWidth: "600px", margin: "80px auto" }}>
+        <UseEffectStd />
         <Exercicios />
+      </div> */}
+
+      {/* <div style={{ maxWidth: "600px", margin: "80px auto" }}>
+        <UseRefStd />
+      </div> */}
+
+      {/* <div style={{ maxWidth: "600px", margin: "80px auto" }}>
+        <UseMemoStd />
+      </div> */}
+      <div style={{ maxWidth: "600px", margin: "80px auto" }}>
+        <UseCAllBackStd />
       </div>
     </main>
   );
