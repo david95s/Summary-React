@@ -10,9 +10,15 @@ import Exercicios from "./components/Hooks/UseEffectStd/Exercicios";
 import UseRefStd from "./components/Hooks/UseRefStd/UseRefStd";
 import UseMemoStd from "./components/Hooks/UseMemoStd/UseMemoStd";
 import UseCAllBackStd from "./components/Hooks/UseCAllBackStd/UseCAllBackStd";
+import UseContextStd from "./components/Hooks/UseContextStd/UseContextStd";
 
 const App = () => {
   // Toda vz q um Hook foi ativado meu component Renderiza novamente
+
+  const defaultStyle = {
+    maxWidth: "600px",
+    margin: "80px auto",
+  };
 
   return (
     <main className="grid">
@@ -44,24 +50,28 @@ const App = () => {
       </CompoStd> */}
 
       {/* <UseStatStd myStyle={{ color: "gold" }}>Estudo UseState</UseStatStd> */}
-      {/* <div style={{ maxWidth: "600px", margin: "80px auto" }}>
+      {/* <div style={defaultStyle}>
         <ExercUseSta>Execicios Sobre React.useState()</ExercUseSta>
       </div> */}
 
-      {/* <div style={{ maxWidth: "600px", margin: "80px auto" }}>
+      {/* <div style={defaultStyle}>
         <UseEffectStd />
         <Exercicios />
       </div> */}
 
-      {/* <div style={{ maxWidth: "600px", margin: "80px auto" }}>
+      {/* <div style={defaultStyle}>
         <UseRefStd />
       </div> */}
 
-      {/* <div style={{ maxWidth: "600px", margin: "80px auto" }}>
+      {/* <div style={defaultStyle}>
         <UseMemoStd />
       </div> */}
-      <div style={{ maxWidth: "600px", margin: "80px auto" }}>
+      {/* <div style={defaultStyle}>
         <UseCAllBackStd />
+      </div> */}
+
+      <div style={{ ...defaultStyle, maxWidth: "800px" }}>
+        <UseContextStd />
       </div>
     </main>
   );
